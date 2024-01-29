@@ -1,0 +1,133 @@
+body{
+    background-color: black;
+}
+.main{
+    width: 450px;
+    height: 450px;
+    box-shadow: 2px 2px 40px white;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    
+}
+.container{
+    width: 300px;
+    height: 300px;
+    /* box-shadow: 2px 2px 40px white; */
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;            
+}
+        .circle{
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            position: relative;
+            top: 16%;
+            left: 25%;
+        }
+        .circle1{
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            position: relative;
+            top: 10%;
+            left: 80%;
+        }
+        .main:hover .circle{
+            animation: glow1 2s alternate infinite;
+        }
+        .main:hover .circle1{
+            animation: glow1 2s alternate infinite;
+            border: 3px solid rgb(255, 255, 255);
+
+        }
+        .main:hover .container{
+            animation: glow1 2s alternate infinite;
+        }
+
+
+.main:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    animation: glow 2s alternate infinite;
+}
+
+@keyframes glow{
+    0%{
+        box-shadow:  
+        inset 0 0 10px rgba(221, 136, 204, 0.288),
+        inset 0 0 20px rgba(204, 102, 187, 0.288),
+        inset 0 0 40px rgba(187, 68, 170, 0.288),
+        inset 0 0 60px rgba(170, 34, 153, 0.288),
+        inset 0 0 80px rgba(153, 0, 136, 0.288),
+        inset 0 0 100px rgba(136, 0, 119, 0.288),
+        0 0 10px rgba(221, 136, 204, 0.288),
+        0 0 20px rgba(204, 102, 187, 0.288),
+        0 0 40px rgba(187, 68, 170, 0.288),
+        0 0 60px rgba(170, 34, 153, 0.288),
+        0 0 80px rgba(153, 0, 136, 0.288),
+        0 0 100px rgba(150, 4, 130, 0.288);
+
+
+
+    }
+    100%{
+        box-shadow: 
+        inset 0 0 10px rgba(191, 128, 255),
+        inset 0 0 20px rgba(170, 85, 255),
+        inset 0 0 40px rgba(136, 0, 255),
+        inset 0 0 60px rgba(102, 0, 204),
+        inset 0 0 80px rgba(68, 0, 153),
+        inset 0 0 100px rgba(34, 0, 102),
+        0 0 10px rgba(191, 128, 255),
+        0 0 20px rgba(170, 85, 255),
+        0 0 40px rgba(136, 0, 255),
+        0 0 60px rgba(102, 0, 204),
+        0 0 80px rgba(68, 0, 153),
+        0 0 100px rgba(34, 0, 102);
+
+
+
+    }
+}
+@keyframes glow1{
+    0%{
+        box-shadow:  
+        inset  0 0 10px rgba(255, 255, 255, 0.288),
+        inset 0 0 20px rgba(255, 255, 255, 0.288),
+        inset 0 0 40px rgba(255, 255, 255, 0.288),
+        inset 0 0 60px rgba(255, 255, 255, 0.288),
+        inset 0 0 80px rgba(255, 255, 255, 0.288),
+        inset 0 0 100px rgba(255, 255, 255, 0.288),  
+
+        0 0 10px rgba(255, 255, 255, 0.288), 
+        0 0 20px rgba(255, 255, 255, 0.288), 
+        0 0 40px rgba(255, 255, 255, 0.288), 
+        0 0 60px rgba(255, 255, 255, 0.288), 
+        0 0 80px rgba(255, 255, 255, 0.288), 
+        0 0 100px rgba(255, 255, 255, 0.288);
+    }
+    100%{
+        box-shadow: 
+        inset 0 0 10px rgb(255, 255, 255),
+        inset 0 0 20px rgba(255, 255, 255),
+        inset 0 0 40px rgba(255, 255, 255),
+        inset 0 0 60px rgba(255, 255, 255),
+        inset 0 0 80px rgba(255, 255, 255),
+        inset 0 0 100px rgba(255, 255, 255), 
+
+        0 0 10px rgba(255, 255, 255), 
+        0 0 20px rgba(255, 255, 255), 
+        0 0 40px rgba(255, 255, 255), 
+        0 0 60px rgba(255, 255, 255), 
+        0 0 80px rgba(255, 255, 255), 
+        0 0 100px rgba(255, 255, 255);
+  
+}
+}
