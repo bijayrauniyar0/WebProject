@@ -3,89 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background-color: black;
-        }
-        .image-box{
-            width: 200px;
-            height: 350px;
-            position: absolute;
-            border: 2px solid black;
-            top:10%;
-            left: 30%;
-            box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.534);
-        }
-        
-        .opac-box .hanuman{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            
-        }
-        .hidden-img .shree-ram{
-            position: relative;
-            width: 100%;
-            height: 100%;
-            opacity:0;
-           transition: 0.4s ease-in-out;
-           margin-top: -100px;
-        }
-        h2{
-            text-align: center;
-            font-size: 2rem;
-            position:relative;
-            top: -50%;
-        }
-        .image-box:hover .hanuman{
-            filter: brightness(0.1);
-            transform: rotateX(20deg);
-               
-        }
-        .image-box:hover{
-            box-shadow: none;
-        }
-        .image-box:hover .opac-box{
-            perspective: 800px;
-        }
-        .image-box:hover .shree-ram{
-            opacity: 1;
-            animation: glow 2s alternate infinite;
-
-        }
-        .image-box:hover h2{
-            opacity: 1;
-            animation: glow1 2s alternate infinite;
-        }
-    @keyframes glow{
-0%{
-    filter: 
-    drop-shadow(0 0 10px rgba(255, 179, 102, 0.5))
-    drop-shadow(0 0 20px rgba(255, 153, 51, 0.5))
-}
-100%{
-    filter: 
-    drop-shadow(0 0 10px rgba(255, 0, 0, 1))
-    drop-shadow(0 0 20px rgba(255, 51, 51, 1))
-}
-}
-    @keyframes glow1{
-0%{
-    text-shadow:0 0 10px rgba(255, 179, 102, 0.5),0 0 20px rgba(255, 153, 51, 0.5);
-}
-100%{
-
-    text-shadow:0 0 10px rgba(255, 0, 0, 1),0 0 20px rgba(255, 51, 51, 1);
-}
-}
-      
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Shree Ram Hover Card</title>
 </head>
 <body>
     <div class="image-box">
         <div class="opac-box">
-            <img src="shree-ram-meditating-hanuman-axkzqi30p08e5usy.jpg" alt="" class="hanuman">
+            <img src="hanuman.jpg" alt="" class="hanuman">
         <div class="hidden-img">
             
             <img src="shree-ram.png" alt="" class="shree-ram">
