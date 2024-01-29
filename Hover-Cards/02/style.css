@@ -1,0 +1,49 @@
+body{
+  background-color: rgb(88, 81, 81);
+}
+.image-container{
+  position: relative;
+  width: 50%;
+  height: auto;
+}
+
+.content{
+  width: 60%;
+  font-size: 2rem;
+  position: absolute;
+  margin-top: 30%;
+  left: 60%;
+  text-align: center;
+  color:black;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px white;
+  transition: 0.4s ease-in-out;
+
+}
+
+
+
+.image-container:hover{
+  box-shadow: 0 0 5px red;
+  animation: glow 2s alternate infinite;
+}
+
+.image-container:hover .content{
+  text-shadow: 0 0 5px red;
+  box-shadow: 0 0 5px red;
+  animation: glow 1.5s alternate infinite;
+  filter: none;
+}
+
+
+@keyframes glow{
+0%{
+text-shadow: 0 0 5px rgba(255, 0, 0, 0.205),0 0 10px rgba(255, 0, 0, 0.205),0 0 15px rgba(255, 0, 0, 0.205);
+box-shadow: 0 0 10px rgba(255, 0, 0, 0.205),0 0 20px rgba(255, 0, 0, 0.205),0 0 40px rgba(255, 0, 0, 0.205),0 0 60px rgba(255, 0, 0, 0.205),0 0 80px rgba(255, 0, 0, 0.205),0 0 100px rgba(255, 0, 0, 0.205) ,0 0 120px rgba(255, 0, 0, 0.205);
+}
+100%{
+text-shadow:  0 0 5px red,0 0 10px red,0 0 15px red;
+box-shadow:   0 0 10px red,0 0 20px red,0 0 40px red, 0 0 60px red,0 0 80px red,0 0 100px red,0 0 120px red;
+}
+} 
