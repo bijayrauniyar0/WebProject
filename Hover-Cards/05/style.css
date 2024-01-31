@@ -23,35 +23,37 @@ body{
     
     
 }
-.container img{
-    position: absolute;
-    width: 300px;
-    height: 150px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.container .date{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: black;
-    left: 6%;
-    top: 30%;
-    box-shadow: 0 10px 20px rgb(255, 0, 212);
-    border-radius: 5px;
- 
-}
-.line{
-    position: absolute;
-    height: 10px;
-    width: 21.9vw;
-    background-color: rgb(255, 0, 212);
-    top: 25%;
-    filter: blur(20px);
-}
-.date,h2,p{
-    transition: 0.3s ease-in-out;
-}
+
+    .container img{
+        position: absolute;
+        width: 300px;
+        height: 150px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .container .date{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: black;
+        left: 6%;
+        top: 30%;
+        box-shadow: 0 10px 20px rgb(255, 0, 212);
+        border-radius: 5px;
+    
+    }
+    .line{
+        position: absolute;
+        height: 10px;
+        width: 21.9vw;
+        background-color: rgb(255, 0, 212);
+        top: 25%;
+        filter: blur(20px);
+    }
+    .date,h2,p{
+        transition: 0.3s ease-in-out;
+    }
+
 .date h2{
     text-align: center;
     color: white;
@@ -96,16 +98,18 @@ h3{
 
 }
 
-.title h2:hover{
-    text-shadow:  
-    0 0 5px rgb(0, 191, 255),
-    0 0 10px rgb(0, 191, 255),
-    0 0 15px rgb(0, 191, 255);
-    border-radius: 5px;
-    filter: hue-rotate(3deg);
-    transform: scale(1.2);
-    color: black;
-}
+    .title h2:hover{
+        text-shadow:  
+        0 0 5px rgb(0, 191, 255),
+        0 0 10px rgb(0, 191, 255),
+        0 0 15px rgb(0, 191, 255);
+        border-radius: 5px;
+        filter: hue-rotate(3deg);
+        transform: scale(1.2);
+        color: black;
+    }
+
+
 .title p:hover,
 .title h2:hover{
     text-shadow:  
@@ -181,7 +185,7 @@ h3{
         0 0 40px rgba(255, 0, 212, 0.45);
     }
     100%{
-        text-shadow:  
+        text-shadow: 
         0 0 10px rgb(255, 0, 212),
         0 0 20px rgb(255, 0, 212),
         0 0 30px rgb(255, 0, 212),
@@ -189,18 +193,20 @@ h3{
     }
 }
 @keyframes neonGlow {
-0% {
-box-shadow: 
-    10px rgba(0, 191, 255, 0.45),
-    0 0 20px rgba(0, 191, 255, 0.45),
-    0 0 30px rgba(0, 191, 255, 0.45),
-    0 0 40px rgba(0, 191, 255, 0.45);
-}
-100% {
-box-shadow:  
-    0 0 10px rgb(0, 191, 255),
-    0 0 20px rgb(0, 191, 255),
-    0 0 30px rgb(0, 191, 255),
-    0 0 40px rgb(0, 191, 255);
-}
-}
+
+    
+            0% {
+            box-shadow: 
+                10px rgba(0, 191, 255, 0.45),
+                0 0 20px rgba(0, 191, 255, 0.45),
+                0 0 30px rgba(0, 191, 255, 0.45),
+                0 0 40px rgba(0, 191, 255, 0.45);
+            }
+            100% {
+            box-shadow:  
+                0 0 10px rgb(0, 191, 255),
+                0 0 20px rgb(0, 191, 255),
+                0 0 30px rgb(0, 191, 255),
+                0 0 40px rgb(0, 191, 255);
+            }
+            }
