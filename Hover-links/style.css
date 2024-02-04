@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+}
+.container{
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 40%;
+    margin-top: 15%;
+}
+.social-media{
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    margin-top: 10%;
+
+}
+.social-media i{
+    color: white;
+    margin: 20px auto;
+}
+.fa-brands{
+    font-size: 30px;
+    transition: 0.1s ease-in-out;
+}
+.social-media i:hover{
+    transform: scale(1.4);
+
+}
+#fb:hover{
+    filter: drop-shadow(0 0 6px rgb(2, 27, 255));
+}
+#insta:hover{
+    filter: drop-shadow(0 0 6px rgb(255, 2, 255));
+}
+#linkedin:hover{
+    filter: drop-shadow(0 0 6px rgb(2, 120, 255));
+}
+#discord:hover{
+    filter: drop-shadow(0 0 6px rgb(154, 2, 255));
+}
+#yt:hover{
+    filter: drop-shadow(0 0 6px rgb(255, 0, 0));
+}
+#git:hover{
+    filter: drop-shadow(0 0 6px rgb(255, 255, 255));
+}
+
+.page-links{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top:30%;
+    justify-content: center;
+    align-items: center;
+}
+.page-links a{
+    margin: auto 20px;
+    text-decoration: none;
+    color: white;
+}
+.page-links a:hover{
+    transform: scale(1.2);
+}
