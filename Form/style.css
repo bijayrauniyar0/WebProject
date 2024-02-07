@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(image.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+nav .left h2 a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    padding: 8px 6px;
+    background-color: rgb(46, 82, 116);
+    height: auto;
+}
+nav .mid{
+    position: absolute;
+    left: 30%;
+}
+nav .mid ul{
+    display: flex;
+    flex-direction: row;
+}
+nav .mid ul li{
+    padding: 4px 8px;
+    list-style: none;
+    font-size: 20px;
+    margin-left: 40px;
+   
+}
+nav .mid ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+nav .right{
+    position: absolute;
+    left: 90%;
+    
+}
+nav .right h2{
+    background-color: orange;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 22px;
+    padding: 3px 6px;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+nav .right h2 a{
+    text-decoration: none;
+    color: white;
+}
+nav .right h2:hover{
+    transform: scale(1.05);
+}
+
+.toggle{
+    position: absolute;
+    left: 92%;
+    font-size: 22px;
+}
+nav .mid a:hover{
+    color: blue;
+}
+
+/* dropdown */
+.dropMenu{
+    width: 250px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 10%;
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    height: 0;
+    overflow: hidden;
+    display: none;
+    transition: 0.3s;
+}
+.dropMenu ul{
+    padding: 8px 0;
+    
+}
+.dropMenu ul li{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 6px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.toggle{
+    display: none;
+}
+.dropMenu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.dropMenu ul li h2{
+    font-size: 24px;
+    background-color: rgba(47, 45, 158, 0.623);
+    border-radius: 50px;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    padding: 3px 0;
+}
+.dropMenu ul li h2 .btn{
+    padding: 8px 50px;
+}
+.dropMenu ul li:hover a{
+    color: rgb(46, 45, 158);
+    font-weight: 600;
+}
+.dropMenu ul .action-btn h2:hover{
+    transform: scale(1.05);
+}
+.dropMenu ul .action-btn h2:hover a{
+    color: white;
+}
+.dropMenu.open{
+    height: 230px;
+}
+
+
+
+
+@media(max-width:992px){
+    .right,.mid{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .dropMenu{
+        display: block;
+        left:70%
+    }
+
+
+
+}
+@media (max-width:1280px){
+
+    nav .mid{
+        left: 20%;
+    }
+    nav .right{
+        left: 80%;
+    }
+}
+@media(max-width:768px){
+    .dropMenu{
+        left: 20%;
+        
+    }
+    .toggle{
+        left: 85%;
+    }
+}
+
+
+
+/* form */
+#form{
+    width: 450px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.158);
+    backdrop-filter: blur(3px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+#form h2{
+    text-align: center;
+    color: white;
+    padding: 8px 0;
+    font-size: 2rem;
+}
+#form .horizental{
+    width:6vw;
+    height: 5px;
+    background-color: rgb(43, 116, 226);
+    position: absolute;
+    left: 38%;
+    margin-top: -8px;
+    border-radius: 50px;
+}
+#form .form-group{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px;
+   
+ 
+}
+#name,#last-name,#pwd,#c-pwd,#date{
+    width: 40%;
+}
+#last-name,#c-pwd,#gnd{
+    margin-left: 20px;
+}
+#gnd{
+    width: 47%;
+    
+}
+#number,#email{
+    width:90%;
+}
+#name,#last-name,#c-pwd,#number,#pwd,#email,#gnd,#date{
+    border-radius: 100px;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    background-color: rgba(50, 67, 143, 0.5);
+    backdrop-filter: blur(1px);
+    color: rgba(255, 255, 255, 0.842);
+}
+::placeholder{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.form-group .trm{
+    font-size: 22px !important;
+    margin-left: 20px;
+    color: rgb(0, 0, 0) !important;
+}
+input[type="checkbox"]{
+    transform: scale(1.5);
+}
+input[type="checkbox"]{
+    transform: scale(1.5);
+}
+#sbt{
+    background-color: blue;
+    border-radius: 20px;
+    padding: 10px 22px;
+    color: white;
+    border: none;
+    position: relative;
+    left: 40%;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    transition: 0.2s ease-in-out;
+}
+#sbt:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}

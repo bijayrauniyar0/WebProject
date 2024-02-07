@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2f01e0402b.js" crossorigin="anonymous"></script>
+    <title>Responsive Menu</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <h2><a href="#">Loop Verse</a></h2>
+            </div>
+            <div class="mid">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact US</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2><a href="">Get Started</a></h2>
+            </div>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropMenu open">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact US</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li class="action-btn"><h2><a href="#" class="btn">Get Started</a><h2></h2></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <main>
+            <section id="form">
+                <h2>Sign Up</h2>
+                <div class="horizental"></div>
+                <form action="#">
+                    <div class="form-group">
+                        <input id="name" type="text" placeholder="First Name" required>
+                        <input id="last-name" type="text" placeholder="Last Name" >
+                    </div>
+                    <div class="form-group">
+                        <input  maxlength="10" id="number" type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="email" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="pwd" type="password" placeholder="Enter password" required>
+                        <input id="c-pwd" type="password" placeholder="Confirm password"required>
+                    </div>
+                    <div class="form-group">
+                        <input id="date" type="date" placeholder="Date of Birth"required>
+                        <select name="gender" id="gnd">
+                            <option value="">Select Gender</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                            <option value="">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input id="terms" type="checkbox" name="terms" required> <h2 class="trm">I agree to the terms and conditions.</h2>
+                    </div>
+                    <button type="submit" id="sbt" class="action">Submit</button>
+
+                </form>
+            </section>
+        </main>
+
+    <script>
+        const dropMenu = document.querySelector('.dropMenu')
+        const menuBtn = document.querySelector('.toggle i')
+        const toggleBtn = document.querySelector('.toggle')
+
+        toggleBtn.onclick = function(){
+            dropMenu.classList.toggle('open')
+            const isOpen = dropMenu.classList.contains('open')
+
+            menuBtn.classList = isOpen
+            ? 'fa-solid fa-x'
+            :'fa-solid fa-bars'
+
+
+        }
+
+        
+    </script>
+</body>
+</html>
