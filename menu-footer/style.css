@@ -5,7 +5,7 @@
 body{
     background-image: url(image.jpg);
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 nav .left h2 a{
     text-decoration: none;
@@ -165,4 +165,160 @@ nav .mid a:hover{
     .toggle{
         left: 85%;
     }
+}
+
+main{
+    height: 92vh;
+}
+
+
+
+
+footer{
+    background-color: rgb(15, 15, 15);
+    /* height: auto; */
+}
+.other-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.other-links .left-footer{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+.left-footer p{
+    font-size: 22px;
+    margin: 12px 0;
+   
+}
+.left-footer .contacts h2{
+    font-size: 18px;
+    margin: 5px 0;
+    transition: 0.3s ease-in-out;
+}
+.left-footer .contacts h2:hover{
+    color: rgb(0, 132, 255);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.other-links .left-footer img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.right-footer{
+    margin-top: 40px;
+    width: 55%;
+    display: flex;
+    margin-left: 25%;
+}
+.loop-verse, .browse{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.browse{
+    margin-left: 20%;
+}
+.loop-verse h2, .browse h2{
+    margin: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.loop-verse a, .browse a{
+    color: rgba(255, 255, 255, 0.788);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 0;
+    transition: 0.3s ease-in-out;
+}
+.right-footer a:hover{
+        color: rgb(0, 162, 255);
+}
+
+.social-links{
+    color: white;
+    display: flex;
+    margin-top: 50px;
+    background-color: black;
+    height: 10vh;
+}
+.social-links .copy{
+    display: flex;
+    padding: 20px 12px 10px;
+    font-size: 22px;
+    margin-left: 30px;
+
+}
+.copy i{
+    padding-top: 3px;
+}
+.copy p{
+    margin-left: 15px;
+}
+
+.social-links .social{
+    left: 60%;
+    padding: 8px 12px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+.social-links .social a{
+    color: white;
+    font-size: 2.5rem;
+    padding: 0 12px;
+    
+}
+.social-links .social a i{
+    transition: 0.2s ease-in-out;
+}
+.social-links .social a:hover i{
+    filter: drop-shadow(0 0 6px white);
+    transform:scale(1.2);
+
+}
+
+@media(max-width:992px){
+    footer h2{
+        font-size: 16px;
+    }
+    .other-links img{
+        width: 130px;
+        height: 50px;
+    }
+    .social{
+        left: 50%;
+    }
+    .social a i{
+        font-size: 1.8rem;
+    }
+    .copy{
+        font-size: 16px;
+    }
+}
+@media(max-width:768px){
+    .copy p{
+        font-size: 12px;
+        padding: 0;
+    }
+    .copy i{
+        font-size: 12px;
+    }
+    .social{
+        left: 10%;
+    }
+    .social a i{
+        font-size: 1rem;
+    }
+
 }
