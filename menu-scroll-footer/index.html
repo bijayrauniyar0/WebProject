@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2f01e0402b.js" crossorigin="anonymous"></script>
+    <title>Responsive Menu</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <h2><a href="#">Loop Verse</a></h2>
+            </div>
+            <div class="mid">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact US</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2><a href="">Get Started</a></h2>
+            </div>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropMenu open">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact US</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li class="action-btn"><h2><a href="#" class="btn">Get Started</a><h2></h2></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Horizental ScrollBar</h2>
+        <div class="space-below">
+            <div class="cards-container">
+                <div class="cards">
+                    <img src="01.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="02.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="03.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="04.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="05.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="01.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="02.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="03.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="04.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="05.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="01.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="02.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="03.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="04.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="05.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="01.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="02.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="03.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="04.jpg" alt="">
+                </div>
+                <div class="cards">
+                    <img src="05.jpg" alt="">
+                </div>
+            </div>
+            <div class="space"></div>
+        </div>
+    </main>
+        <footer>
+            <div class="other-links">
+                <div class="left-footer">
+                <div class="img-details">
+                    <img src="logo.jpg" alt="">
+                    <p>A product of Loop Verse</p>
+                    <div class="contacts">
+                        <h2>+977-9876543210</h2>
+                        <h2>support@loopverse.com</h2>
+                    </div>
+                </div>
+                </div>
+                <div class="right-footer">
+                    <div class="loop-verse">
+                        <h2>Loop Verse</h2>
+                        <a href="">Profile</a>
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                        <a href="">Terms & Conditions</a>
+                    
+                    </div>
+                    <div class="browse">
+                        <h2>Browse</h2>
+                        <a href="">Products</a>
+                        <a href="">Top Rated</a>
+                        <a href="">Recently Added</a>
+                        <a href="">Top Selling</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <div class="copy">
+                    <i class="fa-regular fa-copyright"></i>
+                    <p>Loop Verse, 2024. Created By Bijay Rauniyar</p>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+    <script>
+        const dropMenu = document.querySelector('.dropMenu')
+        const menuBtn = document.querySelector('.toggle i')
+        const toggleBtn = document.querySelector('.toggle')
+
+        toggleBtn.onclick = function(){
+            dropMenu.classList.toggle('open')
+            const isOpen = dropMenu.classList.contains('open')
+
+            menuBtn.classList = isOpen
+            ? 'fa-solid fa-x'
+            :'fa-solid fa-bars'
+
+
+        }
+
+        
+    </script>
+</body>
+</html>
