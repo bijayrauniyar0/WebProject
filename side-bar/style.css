@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(image.jpg);
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+#aside{
+    width: 25%;
+    height: 100vh;
+    background-color: black;
+    padding: 30px 10px;
+
+}
+.fa-bars{
+    color: white;
+    font-size: 2.5rem;
+    position: relative;
+    left: 88%;
+}
+.sidebar-container{
+    height: 50vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.sidebar-container:hover{
+    cursor: pointer;
+}
+.sidebar-container::-webkit-scrollbar{
+    width: 9px;
+}
+.sidebar-container::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 10px;
+}
+.sidebar-container:hover::-webkit-scrollbar-thumb{
+    background-color: rgba(204, 204, 204, 0.829);
+    
+}
+.sidebar-container ul{
+    padding: 10px 16px;
+}
+.sidebar-container ul li{
+    list-style: none;
+    padding: 15px 20px;
+}
+.sidebar-container ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+.social-container{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.social-container .social-links{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+.social-container .social-links a i{
+    color: white;
+    font-size: 3rem;
+    margin: 10px 0;
+    transition: 0.2s ease-in-out;
+
+}
+.social-container .social-links a i:hover{
+    transform: scale(1.4);
+    filter: drop-shadow(0 0 6px white);
+}
