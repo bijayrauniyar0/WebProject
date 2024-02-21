@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body{
+            background-color: rgba(44, 44, 44, 0.788);
+        }
+        .calculator{
+            width: 410px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.842);
+            border-radius: 10px;
+            /* border: 1px solid rgb(0, 0, 0); */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+
+        }
+        #display{
+            width: 99%;
+            padding: 2px 3px;
+            margin-right:10px ;
+            border-radius: 5px;
+            /* border: none; */
+            height: 98px;
+            /* margin-top: 3px; */
+            border: none;
+        }
+        .buttons{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        button{
+            border-radius: 10px;
+            background-color: rgb(207, 207, 207);
+            font-size: 2rem;
+            text-align: center;
+            box-shadow: inset -2px -2px 2px white;
+            padding: 14px 16px;
+        }
+        input[type="text"]{
+            font-size: 28px;
+            text-align: right;
+            background-color: white;
+            color: black;
+        }
+        #calculation{
+            background-color: rgba(122, 122, 122, 0.671);
+        }
+        #submit{
+            background-color: rgb(255, 123, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" name="display" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()" id="calculation">C</button>
+            <button onclick="" id="calculation"></button>
+            <button onclick="" id="calculation"></button>
+            <button onclick="appendToDisplay('%')"id="calculation">%</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')"id="calculation">*</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')"id="calculation">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')" id="calculation">+</button>
+            <button onclick="appendToDisplay('/')"id="calculation">/</button>
+            <button onclick="appendToDisplay('(')"id="calculation">(</button>
+            <button onclick="appendToDisplay(')')"id="calculation">)</button>
+            <button onclick="calculate('=')" id="submit">=</button>
+        </div>
+    </div>
+    <script>
+        let display = document.getElementById('display')
+
+        function appendToDisplay(value){
+            display.value += value;
+        }
+
+        function clearDisplay(){
+            display.value = ''
+        }
+
+        function calculate(){
+            try{
+                display.value = eval(display.value);
+            }catch(error){
+                display.value = 'Error'
+            }
+        }
+    </script>
+
+</body>
+</html>
