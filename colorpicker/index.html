@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <input type="color" name="" id="color">
+    <script>
+        var color = document.getElementById('color')
+        var body = document.getElementById('body')
+
+        color.addEventListener('input',function(){
+            body.style.background = color.value;
+        })
+    </script>
+</body>
+</html>
