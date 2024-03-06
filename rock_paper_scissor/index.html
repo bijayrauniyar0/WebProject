@@ -13,7 +13,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin-top: 100px;
+            margin-top: 70px;
         }
         .computer{
             width: 400px;
@@ -71,7 +71,9 @@
 
         }
         #winner{
-            text-align: center;
+            position: absolute;
+            left: 45%;
+            top: 0;
             font-size: 5rem;
             margin-top: 50px;
             color: white;
@@ -91,6 +93,7 @@
     <h2>Round: <span id="round"></span></h2>
     <h2>Computer Wins:<span id="computer"></span></h2>
     <h2>User Wins: <span id="user"></span></h2>
+    <h1 id="winner"></h1>
     <section id="game">
         <div class="computer">
            <img src="rock.png" alt="" id="rock">
@@ -106,7 +109,6 @@
             </div>
         </div>
     </section>
-    <h1 id="winner"></h1>
 
     <script>
         let rock = document.getElementById('rock');
