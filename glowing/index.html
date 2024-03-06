@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        img{
+            width: 400px;
+            aspect-ratio: 2/3;
+            object-fit: contain;
+            animation: glow .1s alternate infinite ease-in-out;
+        }
+        @keyframes glow {
+            0%{
+                filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.192));
+            }
+            100%{
+                filter: drop-shadow(0 0 10px yellow);
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="me.png" alt="">
+</body>
+</html>
