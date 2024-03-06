@@ -8,11 +8,19 @@
         body{
             background-color: black;
         }
-        img{
+        .ullu{
             width: 400px;
             aspect-ratio: 2/3;
             object-fit: contain;
-            animation: glow .1s alternate infinite ease-in-out;
+        }
+        .ullu.on{
+            animation: glow .8s alternate infinite ease-in-out;
+
+        }
+        
+        #btn{
+            padding: 20px 40px;
+            font-size: 2rem;
         }
         @keyframes glow {
             0%{
@@ -27,6 +35,20 @@
     </style>
 </head>
 <body>
-    <img src="me.png" alt="">
+    <img src="me.png" alt="" class="ullu">
+    <button id="btn"></button>
+
+    <script>
+        let btn = document.getElementById('btn');
+        let ullu = document.querySelector('.ullu');
+        btn.addEventListener('click', ()=>{
+            ullu.classList.toggle('on');
+            if(ullu.classList.contains('on')){
+                btn.innerText = 'Turn Off';
+            }else{
+                btn.innerText = 'Turn On';
+            }
+        })
+    </script>
 </body>
 </html>
