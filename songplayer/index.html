@@ -5,21 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: rgb(94, 93, 93);
+        }
         button {
             padding: 10px 20px;
             font-size: 20px;
             cursor: pointer;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 3px solid rgb(13, 13, 250);
+            border-radius: 7px;
+            background-color: rgb(135, 117, 218);
+            color: white;
+        }
+        button:hover{
+            background-color: rgb(65, 65, 209);
         }
     </style>
 </head>
 <body>
-    <button onclick="playAudio()">Play Me</button>
+    <button onclick="playAudio()">Bajao</button>
+    
     <script>
-        function playAudio() {
-            var audio = new Audio('gjb.mp3');
-            audio.play();
-        }
-        
+      function playAudio(){
+        var audio = new Audio('gjb.mp3');
+        audio.play();
+      }
     </script>
 </body>
 </html>
