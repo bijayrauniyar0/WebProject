@@ -9,46 +9,32 @@
             background-color: black;
         }
         .ullu{
-            width: 400px;
+            margin: 200px 30%;
+            width: 150px; 
             aspect-ratio: 2/3;
             object-fit: contain;
-        }
-        .ullu.on{
-            animation: glow .8s alternate infinite ease-in-out;
-
-        }
-        
-        #btn{
-            padding: 20px 40px;
-            font-size: 2rem;
+            animation: glow .5s infinite alternate;
         }
         @keyframes glow {
             0%{
-                filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.192));
+                filter: 
+                drop-shadow(0 0 5px rgba(248, 7, 7, 0.192))
+                drop-shadow(0 0 10px rgba(248, 7, 7, 0.192))
+                drop-shadow(0 0 15px rgba(248, 7, 7, 0.192));
             }
             100%{
-                filter: drop-shadow(0 0 10px yellow);
+                filter: 
+                drop-shadow(0 0 5px rgb(248, 7, 7))
+                drop-shadow(0 0 10px rgb(248, 7, 7))
+                drop-shadow(0 0 15px rgb(248, 7, 7));
             }
             
         }
         
+        
     </style>
 </head>
 <body>
-    <img src="me.png" alt="" class="ullu">
-    <button id="btn"></button>
-
-    <script>
-        let btn = document.getElementById('btn');
-        let ullu = document.querySelector('.ullu');
-        btn.addEventListener('click', ()=>{
-            ullu.classList.toggle('on');
-            if(ullu.classList.contains('on')){
-                btn.innerText = 'Turn Off';
-            }else{
-                btn.innerText = 'Turn On';
-            }
-        })
-    </script>
+    <img src="khopda.png" alt="" class="ullu">
 </body>
 </html>

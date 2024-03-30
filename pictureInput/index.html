@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(78, 78, 78);
+        }
+        #input-area{
+            margin: 200px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            border-radius: 8px;
+            height: 150px;
+            border: 5px dashed rgb(173, 173, 173);
+        }
+        img{
+            width: 60%;
+            height: 60%;
+            object-fit: contain;
+        }
+        #fileInput{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 11;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <span id="input-area">
+        <input type="file" id="fileInput" name="fileInput" accept="image/*">
+        <img src="camera.png" alt="">
+    </span>
+</body>
+</html>

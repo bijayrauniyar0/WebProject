@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            overflow: hidden;
+        }
+        img{
+            margin: 100px 200px;
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+        
+        }
+        button{
+            position: absolute;
+            top: 270px;
+            left: 40px;
+            border: none;
+            background-color: blueviolet;
+            color: white;
+            padding: 20px 26px;
+            border-radius: 10px;
+            font-size: 22px;
+        }
+      .img.rotate{
+            animation: rotate .1s linear infinite;
+      }
+
+        button:hover{
+            background-color: rgb(60, 2, 121);
+        }
+        .stand{
+            position: absolute;
+            width: 22px;
+            height: 27vh;
+            position: absolute;
+            top: 265px;
+            left: 320px;
+            background-color: rgb(172, 126, 126);
+            z-index: -11;
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <img src="blades.png" alt="" class="img">
+    <span class="stand"></span>
+    <button onclick="turnOn()">On/Off</button>
+
+    <script>
+        function turnOn(){
+            document.querySelector('.img').classList.toggle('rotate')
+        }
+    </script>
+</body>
+</html>

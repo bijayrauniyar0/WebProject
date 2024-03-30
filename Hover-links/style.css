@@ -34,22 +34,40 @@ body{
 
 }
 #fb:hover{
-    filter: drop-shadow(0 0 6px rgb(2, 27, 255));
+    filter: 
+    drop-shadow(0 0 6px rgb(2, 27, 255))
+    drop-shadow(0 0 12px rgb(2, 27, 255))
+    drop-shadow(0 0 24px rgb(2, 27, 255));
 }
 #insta:hover{
-    filter: drop-shadow(0 0 6px rgb(255, 2, 255));
+    filter: 
+    drop-shadow(0 0 6px rgb(255, 2, 255))
+    drop-shadow(0 0 12px rgb(255, 2, 255))
+    drop-shadow(0 0 24px rgb(255, 2, 255));
 }
 #linkedin:hover{
-    filter: drop-shadow(0 0 6px rgb(2, 120, 255));
+    filter: 
+    drop-shadow(0 0 6px rgb(2, 120, 255))
+    drop-shadow(0 0 12px rgb(2, 120, 255))
+    drop-shadow(0 0 24px rgb(2, 120, 255));
 }
 #discord:hover{
-    filter: drop-shadow(0 0 6px rgb(154, 2, 255));
+    filter: 
+    drop-shadow(0 0 6px rgb(154, 2, 255))
+    drop-shadow(0 0 12px rgb(154, 2, 255))
+    drop-shadow(0 0 24px rgb(154, 2, 255));
 }
 #yt:hover{
-    filter: drop-shadow(0 0 6px rgb(255, 0, 0));
+    filter: 
+    drop-shadow(0 0 6px rgb(255, 0, 0))
+    drop-shadow(0 0 12px rgb(255, 0, 0))
+    drop-shadow(0 0 24px rgb(255, 0, 0));
 }
 #git:hover{
-    filter: drop-shadow(0 0 6px rgb(255, 255, 255));
+    filter: 
+    drop-shadow(0 0 6px rgb(255, 255, 255))
+    drop-shadow(0 0 12px rgb(255, 255, 255))
+    drop-shadow(0 0 24px rgb(255, 255, 255));
 }
 
 .page-links{

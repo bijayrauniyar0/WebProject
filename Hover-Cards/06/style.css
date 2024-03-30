@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    background-image:url(img.jpg);
+    background-image:url(bg.jpg);
     background-size: cover;
 }
 .container{
@@ -23,9 +23,9 @@ body{
 }
 .place h2{
     position: absolute;
-    left: 40%;
+    left: 30%;
     text-align: center;
-    color: rgba(255, 255, 255, 0.74);
+    color: rgba(19, 117, 237, 0.74);
     font-size: 2rem;
 }
 .deg img{
