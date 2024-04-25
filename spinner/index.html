@@ -6,19 +6,15 @@
     <title>Document</title>
     <style>
         .spinner{
+            margin: 100px auto;
             width: 50px;
             height: 50px;
-            /* background-color: gray; */
             border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            border: 5px solid aqua;
+            border: 5px solid rgb(255, 255, 255);
             border-top-color: gray;
             animation: spin 1s linear infinite;
         }
-        /* spinning animation */
+
         @keyframes spin{
             0%{
                 transform: rotate(0deg);
@@ -27,6 +23,7 @@
                 transform: rotate(360deg);
             }
         }
+       
     </style>
 </head>
 <body>

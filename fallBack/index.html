@@ -5,15 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            overflow: hidden;
+            background-color: black;
+        }
         img{
-            margin: 100px;
-            width: 400px;
-            height: 200px;
+            margin: 10px;
+            width: 150px;
+            height: 100px;
             object-fit: cover;
+            border: 2px solid white;
+            border-radius: 8px;
+        }
+        .title{
+            height:50px;
+            color: white;
+            position: absolute;
+            left: 30px;
+            top: 35px;
+            opacity: 0;
+        }  
+        img:hover{
+            filter: blur(0.8px) brightness(0.8) grayscale(0.5);
+        }
+        img:hover + .title{
+            opacity: 1;
+            transition: 0.5s;
         }
     </style>
 </head>
 <body>
-    <img src="bg.jpg" alt="img" onerror="this.src='img.jpg'">
+    <img src="bg.jpg" alt="img">
+    <div class="title">
+        <h2>Hello World</h2>
+    </div>
 </body>
 </html>
