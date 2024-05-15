@@ -1,11 +1,12 @@
-let actors ={
-    "kapoor": {
-        "name": "Shahid Kapoor",
-        "movies": ["Kabir Singh", "Haider"]
-    },
-    "khan": {
-        "name": "Aamir Khan",
-        "movies": ["Dangal", "PK"]
-    },
+function doSomething() {
+    if (condition1) {
+        // Code block 1
+        if (condition2) {
+            // Code block 2
+        } else {
+            // Code block 3
+        }
+    } else {
+        // Code block 4
+    }
 }
-console.table(actors)
