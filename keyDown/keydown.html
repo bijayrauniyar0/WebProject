@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(32, 29, 29);
+            
+        }
+        h2{
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #output{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>You have pressed 
+        <span id="output">{none}</span>
+    </h2>
+    <script>
+        const output = document.getElementById('output');
+        window.addEventListener('keydown', (e) => {
+            output.innerText = e.key;
+        });
+    </script>
+</body>
+</html>
