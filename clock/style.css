@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    color: rgb(43, 156, 43);
+    font-size: 22px;
+
+
+}
+#clock{
+    width: 130px;
+    height: 60px;
+    background-color: rgba(114, 114, 114, 0.433);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 2.2rem;
+    box-shadow: 0 0 12px rgb(43, 156, 43) ;
+}
