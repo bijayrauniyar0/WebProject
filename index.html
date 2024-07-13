@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 100px;
+            height: 30px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+        .box:has(span){
+            background-color: red;
+        }
+
+    </style>
 </head>
-<body> 
-    <div class="c">
-        <div id="a">
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-            
+
+<body>
+    <div class="container">
+        <div class="box">
+            <span>
+
+            </span>
         </div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
 </body>
+
 </html>
